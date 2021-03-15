@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageMeme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:srcCompat="@tools:sample/avatars"
+        android:background="@color/black"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="190dp"
+        android:layout_height="73dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="nxtMeme"
+        android:padding="10dp"
+        android:text="Next"
+        android:textColor="#E2EF27"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:backgroundTint="#6BD81D"/>
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="190dp"
+        android:layout_height="73dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:onClick="shareMeme"
+        android:text="Share"
+        android:textSize="18sp"
+        android:textColor="#319E09"
+        android:textStyle="bold|italic"
+        android:backgroundTint="#F3DD15"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+
+</RelativeLayout>
